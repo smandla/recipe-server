@@ -17,7 +17,7 @@ app.use(cors());
 // connectDB();
 app.use("/recipes", recipeRoutes);
 console.log(process.env.REACT_APP_API);
-const CONNECTION_URL = `mongodb+srv://recipeapp:${process.env.REACT_APP_API}@cluster0.bqg3h.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
+const CONNECTION_URL = `${process.env.API_URL}`;
 
 const port = process.env.PORT;
 
