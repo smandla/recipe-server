@@ -19,7 +19,7 @@ app.use("/recipes", recipeRoutes);
 console.log(process.env.REACT_APP_API);
 const CONNECTION_URL = `mongodb+srv://recipeapp:${process.env.REACT_APP_API}@cluster0.bqg3h.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
 
-const port = process.env.PORT || 8082;
+const port = process.env.PORT;
 
 mongoose
   .connect(CONNECTION_URL, {
